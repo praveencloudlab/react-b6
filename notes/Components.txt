@@ -1,0 +1,19 @@
+Components
+======================
+1.state : mutable content => can be modified
+2.props : immutable contet => can not be modified
+
+ state: is used to move data between the functions of a same component
+ props: is used to move data between the components
+
+
+ hooks in react js
+============================
+1.useState
+2.useEffect
+3.useMemo
+4.useDispatch
+
+
+
+

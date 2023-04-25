@@ -25,7 +25,7 @@ function jsClock(props){
 function reactClock(props){
     // JSX 
 
-    let time=new  Date().toLocaleTimeString("en-US",props.timeZone)
+    let time=new  Date().toLocaleTimeString("en-US",{timeZone:props.timeZone})
     return <div class='card'>
         <div class='card-header bg-info'>{props.timeZone}</div>
         <div class='card-body'>
