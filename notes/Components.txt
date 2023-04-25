@@ -7,6 +7,9 @@ Components
  props: is used to move data between the components
 
 
+  note: when ever state value changes, then UI will be re-rendered with new data
+
+
  hooks in react js
 ============================
 1.useState
