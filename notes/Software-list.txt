@@ -1,0 +1,14 @@
+Software LIST
+======================
+
+1.Node.js (default comes with NPM tool)
+2.Chrome browser
+3.VS Code editor
+4. Mongo DB / MySQL
+=============================
+react js browser extension
+
+
+
+
+
