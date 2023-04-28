@@ -1,7 +1,8 @@
-import React,{useState} from 'react';
+import React,{useState,useEffect} from 'react';
 import 'bootstrap/dist/css/bootstrap.css';
 import BtnGen from './components/BtnGen';
 import Product from './components/Product';
+import CountDown from './components/CountDown';
 
 var products = [
     { id:1024,name:'Laptop',price:486846,description:'Dell XPS I9' },
@@ -12,6 +13,8 @@ const App = () => {
 
   let numbers=[5,10,15,20,-5,-10,-20]
   const[totalCount,setTotalCount]=useState(0)
+  const [resetCount, setResetCount] = useState(0);
+
 
   function totalHitCount(btnLable){
     setTotalCount(totalCount+btnLable)
@@ -21,7 +24,7 @@ const App = () => {
     return numbers.map((number,idx)=>{
       return(
         <div className='col-3 mt-2 text-center' key={idx}>
-              <BtnGen  btnLable={number} hitsEvent={totalHitCount}/>
+              <BtnGen resetCount={resetCount}    btnLable={number} hitsEvent={totalHitCount}/>
         </div>
        
       )
@@ -29,6 +32,9 @@ const App = () => {
    
   }
 
+  /*
+    map,find,filter,forEach
+  */
  function renderProducts(){
     return products.map((product,idx)=>{
       return(
@@ -38,10 +44,21 @@ const App = () => {
       )
     })
  }
+
+ 
+
+
+ const handleRefreshClick=()=>{
+  setResetCount(resetCount + 1);
+  setTotalCount(0)
+ }
   return (
     <div className='container'>
       
       <h1>Counter APP</h1> <hr/>
+
+
+
     
      
       <div className='card'>
@@ -49,6 +66,9 @@ const App = () => {
         <div className='card-body'>
           <div className='card-text'>
           <div className='row'>
+            <br/>
+            <button onClick={handleRefreshClick} >Reset All</button>
+            <hr/>
           {generateButtons()}
           </div>
         </div>
