@@ -1,0 +1,56 @@
+{
+  "products": [
+    {
+      "id": 10,
+      "name": "Pen",
+      "price": 45,
+      "description": "Red Ink"
+    },
+    {
+      "id": 11,
+      "name": "Book",
+      "price": 435,
+      "description": "React JS"
+    },
+    {
+      "id": 12,
+      "name": "Watch",
+      "price": 9865,
+      "description": "Smart Watch"
+    },
+    {
+      "id": 13,
+      "name": "Laptop",
+      "price": 77656,
+      "description": "Dell Laptop"
+    },
+    {
+      "id": 14,
+      "name": "Mobile",
+      "price": 96000,
+      "description": "Samsung Mobile"
+    },
+    {
+      "id": "15",
+      "name": "Tablet",
+      "price": "95000",
+      "description": "Apple iPad Pro"
+    }
+  ],
+  "reviews": [
+    {
+      "revId": "R001",
+      "id": 10,
+      "user": "user1",
+      "ratings": 4.5,
+      "comments": "Good Pen"
+    },
+    {
+      "revId": "R002",
+      "id": 10,
+      "user": "user2",
+      "ratings": 1,
+      "comments": "Received Broken Pen"
+    }
+  ]
+}
